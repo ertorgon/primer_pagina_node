@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+
+head
+    title Tienda de frutas
+    link(rel="stylesheet", href="stylesheets/main.css")
+body
+
+    h1 
+        a(href="tienda_de_fruta.com") Tienda de playeras
+
+    each camiseta in camisetas
+        div.item 
+            h2 Camiseta #{camiseta.color}
+            img(src=camiseta.imagen, alt="camiseta")
+            a(href="tienda/comprar/"+camiseta.color) Comprar
+
+
+
